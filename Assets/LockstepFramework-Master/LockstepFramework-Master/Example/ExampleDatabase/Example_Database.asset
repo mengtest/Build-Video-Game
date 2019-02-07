@@ -25,6 +25,7 @@ MonoBehaviour:
   - _name: Move
   - _name: Spawn
   - _name: Stop
+  - _name: BuildRTSSpawn
   _projectileData:
   - _name: TestBullet
     _description: 
