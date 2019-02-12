@@ -34,3 +34,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+#Ignore because of large file size
+Assets/Gaia/3rd Party Samplers/NatureManufacture/

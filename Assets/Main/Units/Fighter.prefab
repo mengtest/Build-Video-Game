@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 114198109372436662}
   - component: {fileID: 114347673207308454}
   - component: {fileID: 114225853925788620}
+  - component: {fileID: 114870655340864490}
   m_Layer: 0
   m_Name: Fighter
   m_TagString: Untagged
@@ -1161,6 +1162,19 @@ MonoBehaviour:
   _selectionRadius: -1
   _visualCenter: {fileID: 4604414326179430}
   VisualPositionChanged: 0
+--- !u!114 &114870655340864490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420886759436672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f42d52091a614957912ec7da50c9027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mapIndex: 0
+  _bonusHeight: 0
 --- !u!114 &114979924595870798
 MonoBehaviour:
   m_ObjectHideFlags: 1
