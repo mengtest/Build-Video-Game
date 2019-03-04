@@ -816,7 +816,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1420886759436672}
   m_LocalRotation: {x: 0.5735765, y: -0, z: -0, w: 0.819152}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 512, y: 57.07, z: 491.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4454339696039482}
@@ -1038,8 +1038,8 @@ MonoBehaviour:
   _cooldown: 0
   _projectileCode: TestBullet
   _range: 393216
-  _sight: 655360
-  _damage: 65536
+  _sight: 720896
+  _damage: 983040
   _attackInterval: 65536
   _targetAllegiance: 4
   _trackAttackAngle: 1
@@ -1192,7 +1192,7 @@ MonoBehaviour:
     y: 0
   _canMove: 1
   _canTurn: 1
-  _speed: 262144
+  _speed: 327680
   _acceleration: 1048576
   _canPathfind: 1
   DrawPath: 1

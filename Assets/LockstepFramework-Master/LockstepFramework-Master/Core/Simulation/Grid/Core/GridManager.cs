@@ -180,7 +180,7 @@ namespace Lockstep
 		{
 			GetCoordinates (xPos, yPos, out indexX, out indexY);
 			if (!ValidateCoordinates (indexX, indexY)) {
-				Debug.LogError ("No node at position: " + xPos.ToFloat() + ", " + yPos.ToFloat());
+				Debug.LogError ("No node at position: " + xPos.ToFloat() + ", " + yPos.ToFloat() + "Legal Width and heights from x=0 -> " + Width + " and from y=0 -> " + Height);
 				return null;
 			}
 			return (GetNode (indexX, indexY));
