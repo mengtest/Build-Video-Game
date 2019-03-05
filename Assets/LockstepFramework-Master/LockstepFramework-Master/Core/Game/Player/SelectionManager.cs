@@ -40,7 +40,7 @@ namespace Lockstep
 		static readonly FastSorter<LSAgent> bufferBoxedAgents = new FastSorter<LSAgent>(
 																	((source, other) => source.BoxPriority - other.BoxPriority)
 																);
-		static readonly FastList<LSAgent> BoxedAgents = new FastList<LSAgent>();
+		public static readonly FastList<LSAgent> BoxedAgents = new FastList<LSAgent>();
 
 		public static void Initialize()
 		{

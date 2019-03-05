@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 114950799681967736}
   - component: {fileID: 114205760360489494}
   - component: {fileID: 114716577890887216}
+  - component: {fileID: 114139981620763616}
+  - component: {fileID: 114818490552550610}
   m_Layer: 8
   m_Name: TownHall
   m_TagString: Untagged
@@ -53,27 +55,27 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340423867188556}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.34, y: -2.84, z: 0}
+  m_LocalRotation: {x: 0.0714637, y: -1.4551915e-11, z: -0, w: 0.9974432}
+  m_LocalPosition: {x: 0.29, y: -0.66, z: -0.12}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 4447794816606486}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.196, y: 0, z: 0}
 --- !u!4 &4447794816606486
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1027129927734372}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 512, y: 65.1, z: 512}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0031141392, w: 0.9999952}
+  m_LocalPosition: {x: 12.320007, y: 62.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4236279177561944}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.35700002}
 --- !u!23 &23527383062645360
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -116,6 +118,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1340423867188556}
   m_Mesh: {fileID: 4300000, guid: 06f154c85155d684b9d53b38a0f84c3b, type: 3}
+--- !u!114 &114139981620763616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1027129927734372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eaa9ace7d13d4984b939389a2350ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blockPathfinding: 1
 --- !u!114 &114205760360489494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefc8d0eb7ab1174da61d3c71af1bbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnInterval: 212992
+  spawnInterval: 327680
   spawnAgentCode: Fighter
 --- !u!114 &114782285844928104
 MonoBehaviour:
@@ -177,12 +191,25 @@ MonoBehaviour:
     _halfWidth: 32768
     _halfHeight: 32768
     _radius: 242074
-    _immovable: 0
+    _immovable: 1
     _basePriority: 0
     _vertices: []
-    _height: 220405
+    _height: 220856
     _positionalTransform: {fileID: 4447794816606486}
     _rotationalTransform: {fileID: 4447794816606486}
+--- !u!114 &114818490552550610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1027129927734372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f42d52091a614957912ec7da50c9027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mapIndex: 0
+  _bonusHeight: 0
 --- !u!114 &114950799681967736
 MonoBehaviour:
   m_ObjectHideFlags: 1
