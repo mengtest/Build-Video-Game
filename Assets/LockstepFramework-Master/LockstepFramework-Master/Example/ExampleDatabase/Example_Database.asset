@@ -18,7 +18,7 @@ MonoBehaviour:
     _prefab: {fileID: 100310, guid: 7adf26d256267454bb6f9b55470051d7, type: 2}
   - _name: Fighter
     _description: 
-    _icon: {fileID: 0}
+    _icon: {fileID: 21300102, guid: 6eedfc74195a44648b72bcf755811a88, type: 3}
     _prefab: {fileID: 1420886759436672, guid: 30f17152d7a903449b4194cd287991df, type: 2}
   - _name: TownHall
     _description: 
