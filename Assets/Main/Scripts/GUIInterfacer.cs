@@ -25,6 +25,7 @@ namespace BuildRTS {
         }
 
         void Update() {
+            clearGUI();
             if (selection.Count > 0) {
                 LSAgent[] agents = selection.ToArray();
                 Dictionary<string, int> selectionKVPS = new Dictionary<string, int>();
@@ -43,7 +44,7 @@ namespace BuildRTS {
                 string[] keys = new string[selectionKVPS.Count];
                 selectionKVPS.Keys.CopyTo(keys, 0);
 
-                clearGUI();
+                
                 //profileImage.GetComponent<Image>().sprite = getImage(keys[0].ToLower());
                 int x = 0, y = 0;
                 for (int i = 0; i < keys.Length; i++) {
