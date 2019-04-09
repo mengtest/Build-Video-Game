@@ -24,6 +24,14 @@ MonoBehaviour:
     _description: 
     _icon: {fileID: 0}
     _prefab: {fileID: 1027129927734372, guid: 75bd6f86057fef4409b28c1eaa0cddfc, type: 2}
+  - _name: MineralMine1
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1173899545195188, guid: b78a1f3851e7c5441b9ce73102c4420b, type: 2}
+  - _name: LumberMill1
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1375724036074756, guid: 6d4aa05d794696b448b879a6e55a5e14, type: 2}
   _inputData:
   - _name: Attack
   - _name: Move

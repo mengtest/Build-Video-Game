@@ -3,6 +3,7 @@ using Lockstep;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,19 +14,59 @@ namespace BuildRTS {
         public GameObject HUD_Base;
         public GameObject profileImage;
         public Sprite fighterImage, emptyImage, townHallImage;
+        public GameObject playerResources;
 
         private FastList<GameObject> guiElements;
         private int IMAGE_SIZE = 64;
         private FastList<LSAgent> selection;
         private float timePassed = 0, numTimePasses = 0;
 
+        private long time;
+        private double delta;
+        private int fps = 60;
+
         void Start() {
+            delta = 0;
+            time = NanoTime;
             guiElements = new FastList<GameObject>();
             selection = SelectionManager.BoxedAgents;
         }
-
+        public static long NanoTime {
+            get { return (long)(Stopwatch.GetTimestamp() / (Stopwatch.Frequency / 1000000000.0)); }
+        }
         void Update() {
-            clearGUI();
+            
+            delta += fps*(NanoTime - time)/ 1000000000.0;
+            time = NanoTime;
+            
+            while (delta >= 1) {
+                clearGUI();
+                drawSelection();
+                drawResources();
+                delta--;
+            }
+        }
+
+        private void drawResources() {
+            int lumber = ResourceManager.lumber;
+            int minerals = ResourceManager.minerals;
+
+            GameObject text = new GameObject();
+            text.transform.parent = HUD_Base.gameObject.transform;
+            text.name = "Lumber and Minerals";
+            Text textComponent = text.AddComponent<Text>();
+            textComponent.text = "Lumber: " + lumber + "\nMinerals: " + minerals;
+            textComponent.font = (Font)Resources.Load("UIFONT");
+            textComponent.fontSize = 15;
+            textComponent.color = Color.black;
+            RectTransform rectTransform = text.GetComponent<RectTransform>();
+            rectTransform.localPosition = new Vector3(64, -64, 0);
+            rectTransform.sizeDelta = new Vector2(150, 150);
+            guiElements.Add(text);
+
+        }
+
+        private void drawSelection() {
             if (selection.Count > 0) {
                 LSAgent[] agents = selection.ToArray();
                 Dictionary<string, int> selectionKVPS = new Dictionary<string, int>();
@@ -44,12 +85,12 @@ namespace BuildRTS {
                 string[] keys = new string[selectionKVPS.Count];
                 selectionKVPS.Keys.CopyTo(keys, 0);
 
-                
+
                 //profileImage.GetComponent<Image>().sprite = getImage(keys[0].ToLower());
                 int x = 0, y = 0;
                 for (int i = 0; i < keys.Length; i++) {
                     drawUnitProfileImage(keys[i], selectionKVPS[keys[i]], x, y);
-                    x += (int)(IMAGE_SIZE*2);
+                    x += (int)(IMAGE_SIZE * 2);
                 }
             } else {
                 //profileImage.GetComponent<Image>().sprite = getImage("empty");
@@ -61,7 +102,6 @@ namespace BuildRTS {
             if (timePassed > 1) {
                 numTimePasses++;
                 timePassed -= 1;
-                Debug.Log(numTimePasses  + ": " + selection.Count);
             }
         }
 
