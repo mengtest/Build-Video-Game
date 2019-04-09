@@ -13,7 +13,7 @@ namespace BuildRTS {
 
         public GameObject HUD_Base;
         public GameObject profileImage;
-        public Sprite fighterImage, emptyImage, townHallImage;
+        public Sprite fighterImage, emptyImage, townHallImage, mineralImage, lumberImage;
         public GameObject playerResources;
 
         private FastList<GameObject> guiElements;
@@ -149,6 +149,15 @@ namespace BuildRTS {
             if (name.StartsWith("town")) {
                 return townHallImage;
             }
+
+            if (name.StartsWith("mineralminei")) {
+                return mineralImage;
+            }
+
+            if (name.StartsWith("lumbermilli")) {
+                return lumberImage;
+            }
+            UnityEngine.Debug.Log("Unable to find image for " + name);
             return emptyImage;
         }
 
