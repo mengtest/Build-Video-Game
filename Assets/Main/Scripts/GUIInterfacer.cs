@@ -142,7 +142,7 @@ namespace BuildRTS {
 
         private Sprite getImage(string name) {
             name = name.ToLower();
-            if (name.StartsWith("fighter")) {
+            if (name.StartsWith("soldier")) {
                 return fighterImage;
             }
 
