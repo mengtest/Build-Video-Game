@@ -10,6 +10,8 @@ namespace BuildRTS {
         public float minZoom = 0.5f;
         public float maxZoom = 2.0f;
         public float dragSpeed = 200;
+        public int minHeightFromGround = 20;
+        public GameObject groundLocator;
 
         private Vector3 dragOrigin;
         private float baseHeight, currentZoom;
@@ -70,6 +72,11 @@ namespace BuildRTS {
                 transform.SetPositionAndRotation(camStartPos, camStartRotation);
                 transform.Translate(move, Space.Self);
                 transform.SetPositionAndRotation(new Vector3(transform.position.x, camStartPos.y, transform.position.z), transform.rotation);
+            }
+
+            //Make sure at minimum height
+            if (this.gameObject.transform.position.y - groundLocator.transform.position.y <= minHeightFromGround) {
+                this.gameObject.transform.SetPositionAndRotation(new Vector3(this.gameObject.transform.position.x, groundLocator.transform.position.y + minHeightFromGround, this.gameObject.transform.position.z), transform.rotation);
             }
         }
     }
