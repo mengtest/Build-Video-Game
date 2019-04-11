@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 114804103879838350}
   - component: {fileID: 114745216497441874}
   - component: {fileID: 114580438534380132}
+  - component: {fileID: 114669400778552804}
   m_Layer: 0
   m_Name: LumberMill1
   m_TagString: Untagged
@@ -320,6 +321,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   millTimeSeconds: 1
   mineAmount: 1
+--- !u!114 &114669400778552804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375724036074756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990cfe52b93bec249a4e28f70561b775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthCanvas: {fileID: 223676471398928884, guid: 857aa173181546a47b3023f55649dfc7,
+    type: 2}
 --- !u!114 &114745216497441874
 MonoBehaviour:
   m_ObjectHideFlags: 1

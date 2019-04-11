@@ -53,11 +53,17 @@ public class HealthVisual : MonoBehaviour {
 
         float health = Lockstep.FixedMath.ToFloat(hp.HealthAmount) / Lockstep.FixedMath.ToFloat(hp.MaxHealth);
         healthBar.transform.localScale = new Vector3(health, 1, 1);
+        if (health < 0.66) {
+            healthBar.GetComponent<Image>().color = Color.yellow;
+        }
+        if (health < 0.33) {
+            healthBar.GetComponent<Image>().color = Color.red;
 
+        }
     }
 
     public void Die() {
-        Destroy(newCanvas);
-        Destroy(this);
+        newCanvas.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }

@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114716577890887216}
   - component: {fileID: 114139981620763616}
   - component: {fileID: 114818490552550610}
+  - component: {fileID: 114069335035524922}
   m_Layer: 8
   m_Name: TownHall
   m_TagString: Untagged
@@ -191,6 +192,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1864697494500420}
   m_Mesh: {fileID: 4300002, guid: 15cbfcc7502fb324289399ec049b8ce3, type: 3}
+--- !u!114 &114069335035524922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1027129927734372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990cfe52b93bec249a4e28f70561b775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthCanvas: {fileID: 223676471398928884, guid: 857aa173181546a47b3023f55649dfc7,
+    type: 2}
 --- !u!114 &114139981620763616
 MonoBehaviour:
   m_ObjectHideFlags: 1
