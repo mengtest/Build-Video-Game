@@ -47,6 +47,10 @@ MonoBehaviour:
     _description: 
     _icon: {fileID: 0}
     _prefab: {fileID: 167620, guid: 479c1b29b5d8046428adaddf16b43ce8, type: 2}
+  - _name: BlackBullet
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1306676841399610, guid: ca2c1fb5750a06f4fb92df393c62c025, type: 2}
   _effectData: []
   _abilityData:
   - _name: Move

@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db60e16922dd049ceb3f90f627871a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deathTime: 64
+  _deathTime: 0
   _agentType: 0
   _globalID: 0
   _boxPriority: 0

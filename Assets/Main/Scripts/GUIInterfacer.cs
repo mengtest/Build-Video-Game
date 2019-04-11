@@ -16,14 +16,15 @@ namespace BuildRTS {
         public Sprite fighterImage, emptyImage, townHallImage, mineralImage, lumberImage;
         public GameObject playerResources;
 
+
+        private Dictionary<string, FastList<LSAgent>> selectionUnits;
         private FastList<GameObject> guiElements;
         private int IMAGE_SIZE = 64;
         private FastList<LSAgent> selection;
-        private float timePassed = 0, numTimePasses = 0;
 
         private long time;
         private double delta;
-        private int fps = 60;
+        private readonly int fps = 60;
 
         void Start() {
             delta = 0;
@@ -69,39 +70,33 @@ namespace BuildRTS {
         private void drawSelection() {
             if (selection.Count > 0) {
                 LSAgent[] agents = selection.ToArray();
-                Dictionary<string, int> selectionKVPS = new Dictionary<string, int>();
+                selectionUnits = new Dictionary<string, FastList<LSAgent>>();
 
                 foreach (LSAgent ag in agents) {
                     if (ag == null) {
                         continue;
                     }
-                    if (selectionKVPS.ContainsKey(ag.gameObject.name)) {
-                        selectionKVPS[ag.gameObject.name] += 1;
-                    } else {
-                        selectionKVPS.Add(ag.gameObject.name, 1);
+
+                    if (!selectionUnits.ContainsKey(ag.gameObject.name)) {
+                        selectionUnits.Add(ag.gameObject.name, new FastList<LSAgent>());   
                     }
+
+                    selectionUnits[ag.gameObject.name].Add(ag);
                 }
 
-                string[] keys = new string[selectionKVPS.Count];
-                selectionKVPS.Keys.CopyTo(keys, 0);
+                string[] keys = new string[selectionUnits.Count];
+                selectionUnits.Keys.CopyTo(keys, 0);
 
 
                 //profileImage.GetComponent<Image>().sprite = getImage(keys[0].ToLower());
                 int x = 0, y = 0;
                 for (int i = 0; i < keys.Length; i++) {
-                    drawUnitProfileImage(keys[i], selectionKVPS[keys[i]], x, y);
+                    drawUnitProfileImage(keys[i], selectionUnits[keys[i]].Count, x, y);
                     x += (int)(IMAGE_SIZE * 2);
                 }
             } else {
                 //profileImage.GetComponent<Image>().sprite = getImage("empty");
 
-            }
-
-
-            timePassed += Time.deltaTime;
-            if (timePassed > 1) {
-                numTimePasses++;
-                timePassed -= 1;
             }
         }
 

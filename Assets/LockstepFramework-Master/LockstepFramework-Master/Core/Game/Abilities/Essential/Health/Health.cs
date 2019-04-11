@@ -123,6 +123,10 @@ namespace Lockstep
 		public void Die ()
 		{
 			if (Agent.IsActive) {
+                HealthVisual h;
+                if ((h = GetComponent<HealthVisual>())) {
+                    h.Die();
+                }
 				if (onDie != null)
 					this.onDie (this, this.LastAttacker);
 				AgentController.DestroyAgent (Agent);

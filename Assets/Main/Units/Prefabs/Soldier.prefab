@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 114602582291041270}
   - component: {fileID: 114298443064543120}
   - component: {fileID: 114308342622015036}
+  - component: {fileID: 114553996039257902}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Untagged
@@ -598,13 +599,26 @@ MonoBehaviour:
     _layer: 0
     _halfWidth: 32768
     _halfHeight: 32768
-    _radius: 43339
+    _radius: 45875
     _immovable: 0
     _basePriority: 0
     _vertices: []
     _height: 167561
     _positionalTransform: {fileID: 4335726809056220}
     _rotationalTransform: {fileID: 4335726809056220}
+--- !u!114 &114553996039257902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1508881351902808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990cfe52b93bec249a4e28f70561b775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthCanvas: {fileID: 223676471398928884, guid: 857aa173181546a47b3023f55649dfc7,
+    type: 2}
 --- !u!114 &114602582291041270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -651,7 +665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db60e16922dd049ceb3f90f627871a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deathTime: 64
+  _deathTime: 0
   _agentType: 0
   _globalID: 0
   _boxPriority: 0
@@ -673,7 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 6553600
-  _currentHealth: 0
+  _currentHealth: 6553600
 --- !u!114 &114901201465138474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -686,11 +700,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cooldown: 0
-  _projectileCode: TestBullet
+  _projectileCode: BlackBullet
   _range: 393216
   _sight: 655360
-  _damage: 655360
-  _attackInterval: 65536
+  _damage: 327680
+  _attackInterval: 13107
   _targetAllegiance: 4
   _trackAttackAngle: 1
   _attackAngle: 11380
