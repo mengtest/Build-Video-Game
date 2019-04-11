@@ -16,7 +16,7 @@ public class HealthVisual : MonoBehaviour {
     void Start () {
         hp = this.GetComponent<Lockstep.Health>();
         Lockstep.LSBody body = this.GetComponent<Lockstep.UnityLSBody>().InternalBody;
-        //Debug.Log("HieghtPos: " + Lockstep.FixedMath.ToFloat(body.HeightPos) + " Height: " + Lockstep.FixedMath.ToFloat(body.Height));
+
         headYPos = Lockstep.FixedMath.ToFloat(body.HeightPos) 
             + Lockstep.FixedMath.ToFloat(body.Height)*2;
 
@@ -26,19 +26,9 @@ public class HealthVisual : MonoBehaviour {
         newCanvas.GetComponent<RectTransform>().position = new Vector3(0, headYPos, 0);
         newCanvas.GetComponent<RectTransform>().rotation = Quaternion.LookRotation(-Camera.main.transform.forward);
 
-
-        //Debug.Log("Width: " + width + " Scale: " + (width / 100.0f));
         newCanvas.transform.localScale = new Vector3(width/100.0f, width / 100.0f, 1);
         healthBar = newCanvas.transform.GetChild(0).GetChild(0).gameObject;
         healthBar.transform.localScale = new Vector3(hp.HealthAmount/hp.MaxHealth, 1, 1);
-
-        /*
-        Canvas healthBarCanvas = new Canvas();
-        healthBarCanvas.renderMode = RenderMode.WorldSpace;
-        healthBarCanvas.transform.SetParent(transform);//attach it to me
-        healthBarCanvas.transform.localPosition = new Vector3(0, headYPos + 1, 0);
-        */
-
 
     }
 	
