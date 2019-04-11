@@ -702,7 +702,7 @@ MonoBehaviour:
   _cooldown: 0
   _projectileCode: BlackBullet
   _range: 393216
-  _sight: 655360
+  _sight: 1310720
   _damage: 327680
   _attackInterval: 13107
   _targetAllegiance: 4

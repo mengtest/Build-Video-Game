@@ -43,15 +43,29 @@ public class HealthVisual : MonoBehaviour {
 
         float health = Lockstep.FixedMath.ToFloat(hp.HealthAmount) / Lockstep.FixedMath.ToFloat(hp.MaxHealth);
         healthBar.transform.localScale = new Vector3(health, 1, 1);
-        if (health < 0.66) {
-            healthBar.GetComponent<Image>().color = Color.yellow;
-        }
-        if (health < 0.33) {
-            healthBar.GetComponent<Image>().color = Color.red;
 
+        Lockstep.AllegianceType allegianceType = Lockstep.PlayerManager.GetAllegiance(GetComponent<Lockstep.LSAgent>().Controller);
+        Color hpColor;
+        switch (allegianceType) {
+            case (Lockstep.AllegianceType.Friendly):
+                hpColor = Color.green;
+                break;
+            case (Lockstep.AllegianceType.Neutral):
+                hpColor = Color.blue;
+                break;
+            case (Lockstep.AllegianceType.Enemy):
+                hpColor = Color.red;
+                break;
+            default:
+                hpColor = Color.white;
+                break;
         }
+
+        hpColor = Color.Lerp(hpColor, Color.black, 1-health);
+        healthBar.GetComponent<Image>().color = hpColor;
+
+        
     }
-
     public void Die() {
         newCanvas.gameObject.SetActive(false);
         gameObject.SetActive(false);

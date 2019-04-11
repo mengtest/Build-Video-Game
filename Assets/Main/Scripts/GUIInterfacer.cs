@@ -149,7 +149,7 @@ namespace BuildRTS {
                 return mineralImage;
             }
 
-            if (name.StartsWith("lumbermilli")) {
+            if (name.StartsWith("lumbermill1")) {
                 return lumberImage;
             }
             UnityEngine.Debug.Log("Unable to find image for " + name);
