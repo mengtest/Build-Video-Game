@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114141322369902966}
   - component: {fileID: 114107102687776506}
   - component: {fileID: 114528803427674356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MineralMineI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4802502134278846}
   - component: {fileID: 33134435869789936}
   - component: {fileID: 23265481109248488}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock 1 S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 4181424255698720}
   - component: {fileID: 33648639105395206}
   - component: {fileID: 23630796047389302}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 690 Minerals I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 4728684059416378}
   - component: {fileID: 33893865678314204}
   - component: {fileID: 23966314365071512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rock 1 M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,6 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthCanvas: {fileID: 223676471398928884, guid: 857aa173181546a47b3023f55649dfc7,
     type: 2}
+  icon: {fileID: 21300000, guid: 284923670b6a64c4a96a5f68a7cd5e24, type: 3}
 --- !u!114 &114760239078526398
 MonoBehaviour:
   m_ObjectHideFlags: 1

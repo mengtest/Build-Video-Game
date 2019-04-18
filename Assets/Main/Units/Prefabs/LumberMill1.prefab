@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4786927054348990}
   - component: {fileID: 33497000264295704}
   - component: {fileID: 23832250176410554}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Log 1 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4514477832924740}
   - component: {fileID: 33515679849353794}
   - component: {fileID: 23677026704333932}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 690 Logs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 114745216497441874}
   - component: {fileID: 114580438534380132}
   - component: {fileID: 114669400778552804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LumberMill1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 4222735242542822}
   - component: {fileID: 33129783854005518}
   - component: {fileID: 23675975151424926}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Log 1 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthCanvas: {fileID: 223676471398928884, guid: 857aa173181546a47b3023f55649dfc7,
     type: 2}
+  icon: {fileID: 21300000, guid: 7a5289513ac178e4b9cef0b58b93f2ea, type: 3}
 --- !u!114 &114745216497441874
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -96,6 +96,9 @@ namespace Lockstep
 
         public static AllegianceType GetAllegiance(AgentController otherController)
         {
+            if (otherController == null) {
+                return AllegianceType.Neutral;
+            }
             if (Selector.MainSelectedAgent != null)
                 return Selector.MainSelectedAgent.Controller.GetAllegiance(otherController);
             if (MainController == null)

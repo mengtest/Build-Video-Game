@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114139981620763616}
   - component: {fileID: 114818490552550610}
   - component: {fileID: 114069335035524922}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: TownHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4032440608978024}
   - component: {fileID: 33213294378262092}
   - component: {fileID: 23836555717955416}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 4207954983280714}
   - component: {fileID: 33097133928842986}
   - component: {fileID: 23956132254171128}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 690 House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,6 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthCanvas: {fileID: 223676471398928884, guid: 857aa173181546a47b3023f55649dfc7,
     type: 2}
+  icon: {fileID: 21300000, guid: 06b15141017dccb47bf145299cf1193a, type: 3}
 --- !u!114 &114139981620763616
 MonoBehaviour:
   m_ObjectHideFlags: 1
