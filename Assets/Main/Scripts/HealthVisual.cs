@@ -59,7 +59,7 @@ public class HealthVisual : MonoBehaviour {
         Color sideColor;
         switch (allegianceType) {
             case (Lockstep.AllegianceType.Friendly):
-                sideColor = Color.blue;
+                sideColor = Color.green;
                 break;
             case (Lockstep.AllegianceType.Neutral):
                 sideColor = Color.blue;
