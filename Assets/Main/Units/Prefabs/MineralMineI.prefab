@@ -322,8 +322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  mineTimeSeconds: 0.5
-  mineAmount: 2
+  mineTimeSeconds: 1
+  mineAmount: 1
 --- !u!114 &114528803427674356
 MonoBehaviour:
   m_ObjectHideFlags: 1

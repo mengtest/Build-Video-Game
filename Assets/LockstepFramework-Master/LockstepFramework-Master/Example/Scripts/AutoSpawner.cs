@@ -44,12 +44,7 @@ namespace Lockstep
 
 			}
 		}
-        protected override void OnVisualize()
-        {
-			if (Input.GetKeyDown (KeyCode.M)) {
-				LaunchSpawns ();
-			}
-        }
+        
         protected override void OnGameStart ()
 		{
 			LaunchSpawns ();

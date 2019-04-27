@@ -22,10 +22,11 @@ GameObject:
   - component: {fileID: 114782285844928104}
   - component: {fileID: 114950799681967736}
   - component: {fileID: 114205760360489494}
-  - component: {fileID: 114716577890887216}
   - component: {fileID: 114139981620763616}
   - component: {fileID: 114818490552550610}
   - component: {fileID: 114069335035524922}
+  - component: {fileID: 114722774395780374}
+  - component: {fileID: 114451736893399654}
   m_Layer: 10
   m_Name: TownHall
   m_TagString: Untagged
@@ -159,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 65536000
   _currentHealth: 65536000
---- !u!114 &114716577890887216
+--- !u!114 &114451736893399654
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -167,11 +168,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1027129927734372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cefc8d0eb7ab1174da61d3c71af1bbbb, type: 3}
+  m_Script: {fileID: 11500000, guid: bd9db46c18b83b94693374c2b6dcc712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnInterval: 327680
-  spawnAgentCode: Soldier
+  millTimeSeconds: 2
+  mineAmount: 1
+--- !u!114 &114722774395780374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1027129927734372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7207a2b9e5812246a21ee8fde4cf309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  mineTimeSeconds: 2
+  mineAmount: 1
 --- !u!114 &114782285844928104
 MonoBehaviour:
   m_ObjectHideFlags: 1

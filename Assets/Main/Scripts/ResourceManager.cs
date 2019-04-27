@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ResourceManager : MonoBehaviour {
 
-    public static int minerals = 0;
-    public static int lumber = 0;
+    public static int minerals = 25;
+    public static int lumber = 25;
 	
 	void updateMinerals(int m) {
         minerals += m;

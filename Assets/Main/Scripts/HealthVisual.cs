@@ -26,6 +26,7 @@ public class HealthVisual : MonoBehaviour {
     void createMinimapIcon() {
         minimap = GameObject.Find("MinimapImage");
         minimapIcon = new GameObject("MinimapIcon");
+        minimapIcon.layer = 5;
         Image i = minimapIcon.AddComponent<Image>();
         
         minimapIcon.transform.SetParent(minimap.transform);

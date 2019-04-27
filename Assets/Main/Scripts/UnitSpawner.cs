@@ -19,6 +19,7 @@ namespace BuildRTS {
             }
         }
 
+
         protected override void OnVisualize() {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 var com = GetSpawnCommand(PlayerManager.MainController, agentSpawnCode, RTSInterfacing.GetWorldPosD(Input.mousePosition));
