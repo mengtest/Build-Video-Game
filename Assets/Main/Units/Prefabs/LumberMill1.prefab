@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 114745216497441874}
   - component: {fileID: 114580438534380132}
   - component: {fileID: 114669400778552804}
+  - component: {fileID: 135622901577036328}
   m_Layer: 10
   m_Name: LumberMill1
   m_TagString: Untagged
@@ -382,3 +383,15 @@ MonoBehaviour:
   _selectionRadius: -1
   _visualCenter: {fileID: 4042025297748176}
   VisualPositionChanged: 0
+--- !u!135 &135622901577036328
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375724036074756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4.07
+  m_Center: {x: 0, y: 1.42, z: 0}

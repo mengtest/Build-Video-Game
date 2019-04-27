@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114141322369902966}
   - component: {fileID: 114107102687776506}
   - component: {fileID: 114528803427674356}
+  - component: {fileID: 135318428949475448}
   m_Layer: 10
   m_Name: MineralMineI
   m_TagString: Untagged
@@ -105,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1645399965688594}
   m_LocalRotation: {x: -0.5504646, y: -0, z: -0, w: 0.8348585}
-  m_LocalPosition: {x: -1.6400003, y: 2.46, z: 0.63}
+  m_LocalPosition: {x: -0.92, y: 2.59, z: 0.34}
   m_LocalScale: {x: 150, y: 150, z: 150.00002}
   m_Children:
   - {fileID: 4728684059416378}
@@ -372,11 +373,11 @@ MonoBehaviour:
     _layer: 0
     _halfWidth: 32768
     _halfHeight: 32768
-    _radius: 483939
+    _radius: 371450
     _immovable: 1
     _basePriority: 0
     _vertices: []
-    _height: 528416
+    _height: 413879
     _positionalTransform: {fileID: 4174472549808496}
     _rotationalTransform: {fileID: 4174472549808496}
 --- !u!114 &114790804871469662
@@ -392,3 +393,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 3276800
   _currentHealth: 3276800
+--- !u!135 &135318428949475448
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1173899545195188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.45
+  m_Center: {x: 0.88, y: 2.27, z: 0}

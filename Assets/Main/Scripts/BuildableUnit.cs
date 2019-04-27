@@ -17,13 +17,16 @@ public class BuildableUnit : Ability {
 
         followMouse();
 
-        RaycastHit sphereHit;
-        if (Physics.SphereCast(transform.position, 30, new Vector3(1, 0, 1 ), out sphereHit, Mathf.Infinity, ~(1 << 8) )) {
-            Debug.Log(sphereHit.collider.name);
-            canBuild = false;
-        } else {
-            canBuild = true;
+        canBuild = true;
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 8);
+        foreach (Collider c in hitColliders) {
+            if (c.GetComponent<LSAgent>() != null) {
+                canBuild = false;
+                break;
+            }
         }
+
+
         if (canBuild) {
             GetComponent<MeshRenderer>().material = good;
         } else {
@@ -70,6 +73,6 @@ public class BuildableUnit : Ability {
             mouseLoc = hit.point;
         }
 
-        transform.position = new Vector3(mouseLoc.x, height + 10, mouseLoc.z);
+        transform.position = new Vector3(mouseLoc.x, height + 6, mouseLoc.z);
     }
 }
