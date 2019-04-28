@@ -61,7 +61,7 @@ namespace BuildRTS {
             textComponent.fontSize = 15;
             textComponent.color = Color.black;
             RectTransform rectTransform = text.GetComponent<RectTransform>();
-            rectTransform.localPosition = new Vector3(64, -64, 0);
+            rectTransform.localPosition = new Vector3(96, -128, 0);
             rectTransform.sizeDelta = new Vector2(250, 150);
             guiElements.Add(text);
 
