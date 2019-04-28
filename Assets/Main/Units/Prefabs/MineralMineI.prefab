@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114107102687776506}
   - component: {fileID: 114528803427674356}
   - component: {fileID: 135318428949475448}
+  - component: {fileID: 114484126760283636}
   m_Layer: 10
   m_Name: MineralMineI
   m_TagString: Untagged
@@ -325,6 +326,19 @@ MonoBehaviour:
   time: 0
   mineTimeSeconds: 1
   mineAmount: 1
+--- !u!114 &114484126760283636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1173899545195188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a8854550053254785dce05bd1f4dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  populationCost: 1
+  populationGain: 0
 --- !u!114 &114528803427674356
 MonoBehaviour:
   m_ObjectHideFlags: 1

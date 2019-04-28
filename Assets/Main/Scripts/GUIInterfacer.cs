@@ -62,7 +62,7 @@ namespace BuildRTS {
             textComponent.color = Color.black;
             RectTransform rectTransform = text.GetComponent<RectTransform>();
             rectTransform.localPosition = new Vector3(64, -64, 0);
-            rectTransform.sizeDelta = new Vector2(150, 150);
+            rectTransform.sizeDelta = new Vector2(250, 150);
             guiElements.Add(text);
 
         }
@@ -136,24 +136,29 @@ namespace BuildRTS {
         }
 
         private Sprite getImage(string name) {
-            name = name.ToLower();
-            if (name.StartsWith("soldier")) {
-                return fighterImage;
-            }
+            try {
+                return GameObject.Find(name).GetComponent<HealthVisual>().icon;
+            } catch (NullReferenceException e) {
+                name = name.ToLower();
+                if (name.StartsWith("soldier")) {
+                    return fighterImage;
+                }
 
-            if (name.StartsWith("town")) {
-                return townHallImage;
-            }
+                if (name.StartsWith("town")) {
+                    return townHallImage;
+                }
 
-            if (name.StartsWith("mineralminei")) {
-                return mineralImage;
-            }
+                if (name.StartsWith("mineralminei")) {
+                    return mineralImage;
+                }
 
-            if (name.StartsWith("lumbermill1")) {
-                return lumberImage;
+                if (name.StartsWith("lumbermill1")) {
+                    return lumberImage;
+                }
+                UnityEngine.Debug.Log("Unable to find image for " + name);
+                return emptyImage;
             }
-            UnityEngine.Debug.Log("Unable to find image for " + name);
-            return emptyImage;
+              
         }
 
     }

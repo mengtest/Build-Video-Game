@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 114580438534380132}
   - component: {fileID: 114669400778552804}
   - component: {fileID: 135622901577036328}
+  - component: {fileID: 114857618504439074}
   m_Layer: 10
   m_Name: LumberMill1
   m_TagString: Untagged
@@ -362,6 +363,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 3276800
   _currentHealth: 3276800
+--- !u!114 &114857618504439074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375724036074756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a8854550053254785dce05bd1f4dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  populationCost: 1
+  populationGain: 0
 --- !u!114 &114958631599158112
 MonoBehaviour:
   m_ObjectHideFlags: 1

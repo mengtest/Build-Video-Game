@@ -36,6 +36,18 @@ MonoBehaviour:
     _description: 
     _icon: {fileID: 0}
     _prefab: {fileID: 1508881351902808, guid: b7c68e5cfb9cbd14f8f406c7dd701892, type: 2}
+  - _name: House
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1118184289558932, guid: c7d67284524d98148b66da3f90af41ed, type: 2}
+  - _name: Barracks
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1118184289558932, guid: 8a76fdb28c19c174288152054f0f0ab0, type: 2}
+  - _name: Zombie
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1508881351902808, guid: f0d3d134520fefd41860b1429bd1979b, type: 2}
   _inputData:
   - _name: Attack
   - _name: Move
@@ -51,6 +63,10 @@ MonoBehaviour:
     _description: 
     _icon: {fileID: 0}
     _prefab: {fileID: 1306676841399610, guid: ca2c1fb5750a06f4fb92df393c62c025, type: 2}
+  - _name: InvisibleBullet
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1306676841399610, guid: e92e8bc12f8f33f4ab068b6222bc7e63, type: 2}
   _effectData: []
   _abilityData:
   - _name: Move
