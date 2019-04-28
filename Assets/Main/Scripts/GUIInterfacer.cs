@@ -56,7 +56,7 @@ namespace BuildRTS {
             text.transform.parent = HUD_Base.gameObject.transform;
             text.name = "Lumber and Minerals";
             Text textComponent = text.AddComponent<Text>();
-            textComponent.text = "Lumber: " + lumber + "\nMinerals: " + minerals;
+            textComponent.text = "Lumber: " + lumber + "\nMinerals: " + minerals + "\nPopulation: " + ResourceManager.population + " / " + ResourceManager.maxPopulation;
             textComponent.font = (Font)Resources.Load("UIFONT");
             textComponent.fontSize = 15;
             textComponent.color = Color.black;

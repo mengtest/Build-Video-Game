@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114722774395780374}
   - component: {fileID: 114451736893399654}
   - component: {fileID: 135616622500174638}
+  - component: {fileID: 114960993983093910}
   m_Layer: 10
   m_Name: TownHall
   m_TagString: Untagged
@@ -263,6 +264,19 @@ MonoBehaviour:
   _selectionRadius: -1
   _visualCenter: {fileID: 4447794816606486}
   VisualPositionChanged: 0
+--- !u!114 &114960993983093910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1027129927734372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a8854550053254785dce05bd1f4dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  populationCost: 0
+  populationGain: 5
 --- !u!135 &135616622500174638
 SphereCollider:
   m_ObjectHideFlags: 1
