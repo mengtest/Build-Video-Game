@@ -25,7 +25,6 @@ public class ZombieMove : MonoBehaviour {
 
         CommandManager.SendCommand(c);
         agent.Controller.RemoveFromSelection(agent);
-        Debug.Log("gotoPos");
     }
 
     void Update () {

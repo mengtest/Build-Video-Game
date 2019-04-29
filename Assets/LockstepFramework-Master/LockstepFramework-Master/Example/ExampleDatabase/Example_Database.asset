@@ -52,6 +52,10 @@ MonoBehaviour:
     _description: 
     _icon: {fileID: 0}
     _prefab: {fileID: 1508881351902808, guid: 0cdc5d56d63686d4ba2da36e14cdf035, type: 2}
+  - _name: Repairman
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1508881351902808, guid: 9e149c2ee1dd54b48ac03cd30939bed0, type: 2}
   _inputData:
   - _name: Attack
   - _name: Move

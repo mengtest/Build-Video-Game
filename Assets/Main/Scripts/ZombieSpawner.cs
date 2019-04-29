@@ -9,6 +9,10 @@ public class ZombieSpawner : MonoBehaviour {
     public string spawnAgentCode;
     [DataCode("AgentControllers")]
     public string ControllerCode;
+    [DataCode("Agents")]
+    public string builderCode;
+    [DataCode("AgentControllers")]
+    public string goodGuyCode;
 
     public double spawnIntervalMinutes = 1;
     public double firstSpawnInterval = 1;
@@ -28,6 +32,7 @@ public class ZombieSpawner : MonoBehaviour {
         }
         if (percentTillWave >= 1) {
             spawnZombies();
+            var controller = AgentControllerHelper.Instance.GetInstanceManager(goodGuyCode).CreateAgent(builderCode, Vector2d.zero);
             time = NanoTime;
             ResourceManager.wave++;
             GameObject audio = GameObject.Find("Audio Source");
