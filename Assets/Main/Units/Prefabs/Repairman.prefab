@@ -766,7 +766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthCanvas: {fileID: 223676471398928884, guid: 857aa173181546a47b3023f55649dfc7,
     type: 2}
-  icon: {fileID: 21300000, guid: 622046a496f5a434793b67e5c22a21b9, type: 3}
+  icon: {fileID: 21300000, guid: 4f54661ff3f25f04586ca08738e977f8, type: 3}
 --- !u!114 &114602582291041270
 MonoBehaviour:
   m_ObjectHideFlags: 1
