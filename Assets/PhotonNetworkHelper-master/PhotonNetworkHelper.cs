@@ -129,8 +129,8 @@ namespace Lockstep.NetworkHelpers
         void OnGUI()
         {
             GUILayout.Space(200f);
-            GUILayout.Label(PhotonNetwork.connectionState.ToString());
-            GUILayout.Label(PhotonNetwork.GetPing().ToString());
+            //GUILayout.Label(PhotonNetwork.connectionState.ToString());
+            //GUILayout.Label(PhotonNetwork.GetPing().ToString());
         }
     }
 }

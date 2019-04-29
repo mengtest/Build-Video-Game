@@ -8,6 +8,11 @@ namespace Lockstep
         public int RoomSize = 1;
 
 
+        private void Start() {
+            ClientManager.HostGame(RoomSize);
+        }
+
+        /*
         void OnGUI () {
 			GUILayout.Label("State Hash: " + AgentController.GetStateHash());
 
@@ -37,7 +42,7 @@ namespace Lockstep
             }
             GUILayout.EndVertical();
         }
-
+        */
         void OnDisable () {
         }
     }

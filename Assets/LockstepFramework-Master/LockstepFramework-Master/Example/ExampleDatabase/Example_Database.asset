@@ -48,6 +48,10 @@ MonoBehaviour:
     _description: 
     _icon: {fileID: 0}
     _prefab: {fileID: 1508881351902808, guid: f0d3d134520fefd41860b1429bd1979b, type: 2}
+  - _name: Turret
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1508881351902808, guid: 0cdc5d56d63686d4ba2da36e14cdf035, type: 2}
   _inputData:
   - _name: Attack
   - _name: Move
@@ -67,6 +71,10 @@ MonoBehaviour:
     _description: 
     _icon: {fileID: 0}
     _prefab: {fileID: 1306676841399610, guid: e92e8bc12f8f33f4ab068b6222bc7e63, type: 2}
+  - _name: CannonBall
+    _description: 
+    _icon: {fileID: 0}
+    _prefab: {fileID: 1306676841399610, guid: a3322ab437d66524d92fd2a3810ff59e, type: 2}
   _effectData: []
   _abilityData:
   - _name: Move

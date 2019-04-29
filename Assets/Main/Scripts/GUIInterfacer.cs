@@ -56,13 +56,15 @@ namespace BuildRTS {
             text.transform.parent = HUD_Base.gameObject.transform;
             text.name = "Lumber and Minerals";
             Text textComponent = text.AddComponent<Text>();
-            textComponent.text = "Lumber: " + lumber + "\nMinerals: " + minerals + "\nPopulation: " + ResourceManager.population + " / " + ResourceManager.maxPopulation;
+            textComponent.text = "Lumber: " + lumber + "\nMinerals: " + minerals + "\nPopulation: " 
+                + ResourceManager.population + " / " + ResourceManager.maxPopulation
+                + "\nWave: " + ResourceManager.wave;
             textComponent.font = (Font)Resources.Load("UIFONT");
-            textComponent.fontSize = 15;
+            textComponent.fontSize = 16;
             textComponent.color = Color.black;
             RectTransform rectTransform = text.GetComponent<RectTransform>();
-            rectTransform.localPosition = new Vector3(96, -128, 0);
-            rectTransform.sizeDelta = new Vector2(250, 150);
+            rectTransform.localPosition = new Vector3(144, -132, 0);
+            rectTransform.sizeDelta = new Vector2(250, 200);
             guiElements.Add(text);
 
         }

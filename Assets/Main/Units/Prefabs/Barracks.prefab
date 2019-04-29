@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a8854550053254785dce05bd1f4dcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  populationCost: 8
+  populationCost: 5
   populationGain: 0
 --- !u!114 &114706112849599280
 MonoBehaviour:

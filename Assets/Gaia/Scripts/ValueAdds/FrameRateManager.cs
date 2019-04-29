@@ -6,8 +6,8 @@ namespace Gaia
     public class FrameRateManager : MonoBehaviour
     {
         //Quality manager related
-        public bool m_showFPS = true;
-        public bool m_showGUI = true;
+        public bool m_showFPS = false;
+        public bool m_showGUI = false;
 
         public bool m_autoQualityManagement = true;
         public float m_autoCheckInterval = 10f;

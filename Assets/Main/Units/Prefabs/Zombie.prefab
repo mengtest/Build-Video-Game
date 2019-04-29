@@ -17886,7 +17886,7 @@ MonoBehaviour:
   _cooldown: 0
   _projectileCode: InvisibleBullet
   _range: 65536
-  _sight: 1966080
+  _sight: 13107200
   _damage: 2228224
   _attackInterval: 65536
   _targetAllegiance: 4

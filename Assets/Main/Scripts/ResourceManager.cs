@@ -10,6 +10,9 @@ public class ResourceManager : MonoBehaviour {
     public static int population = 0;
     public static int maxPopulation = 0;
 
+
+    public static int wave = 1;
+
     private void Update() {
         population = 0;
         maxPopulation = 0;
