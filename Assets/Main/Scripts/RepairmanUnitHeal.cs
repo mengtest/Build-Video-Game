@@ -11,7 +11,8 @@ public class RepairmanUnitHeal : MonoBehaviour {
             if (!c.gameObject.name.Equals(gameObject.name) && (hp = c.GetComponent<Lockstep.Health>()) != null) {
                 if (hp.HealthAmount != hp.MaxHealth) {
                     hp.HealthAmount = hp.MaxHealth;
-                    GetComponent<Lockstep.Health>().HealthAmount = -1;
+                    GetComponent<Lockstep.LSAgent>().Die();
+                    GetComponent<HealthVisual>().Die();
                 }
             }
         }

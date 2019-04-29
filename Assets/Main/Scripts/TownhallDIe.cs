@@ -1,16 +1,18 @@
-﻿using System.Collections;
+﻿using Lockstep;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class TownhallDIe : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+public class TownHallDie : MonoBehaviour {
 	
-	// Update is called once per frame
 	void Update () {
-		
+        if (GameObject.Find("TownHall(Clone)(Clone)") == null && ResourceManager.wave > 1) {
+            Debug.Log("You made it to wave " + ResourceManager.wave);
+            ResourceManager.ResetData();
+            Debug.Log(ResourceManager.wave);
+            ClientManager.Quit();
+            SceneManager.LoadScene("MainMenu");
+        }
 	}
 }

@@ -13,6 +13,15 @@ public class ResourceManager : MonoBehaviour {
 
     public static int wave = 1;
 
+    public static void ResetData() {
+        minerals = 25;
+        lumber = 25;
+        population = 0;
+        maxPopulation = 0;
+        wave = 1;
+}
+
+
     private void Update() {
         population = 0;
         maxPopulation = 0;
