@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class WaveStatusBar : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public GameObject spawner;
 	
-	// Update is called once per frame
 	void Update () {
-		
+        GetComponent<RectTransform>().localScale = new Vector3(1, (float)spawner.GetComponent<ZombieSpawner>().percentTillWave, 1);
 	}
 }

@@ -722,9 +722,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cooldown: 0
   _projectileCode: BlackBullet
-  _range: 393216
-  _sight: 1310720
-  _damage: 327680
+  _range: 524288
+  _sight: 3276800
+  _damage: 393216
   _attackInterval: 13107
   _targetAllegiance: 4
   _trackAttackAngle: 1

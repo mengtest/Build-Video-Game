@@ -13,7 +13,7 @@ public class ZombieSpawner : MonoBehaviour {
     public double spawnIntervalMinutes = 1;
     public double firstSpawnInterval = 1;
 
-
+    public double percentTillWave;
     private double time;
 
 	void Start () {
@@ -21,19 +21,17 @@ public class ZombieSpawner : MonoBehaviour {
 	}
 
     void Update() {
-        if(ResourceManager.wave == 1) {
-            if (NanoTime - time >= firstSpawnInterval * 60 * 1000000000.0) {
-                spawnZombies();
-                time = NanoTime;
-                ResourceManager.wave++;
-            }
+        if (ResourceManager.wave == 1) {
+            percentTillWave = (NanoTime - time) / (firstSpawnInterval * 60 * 1000000000.0);
         } else {
-            if (NanoTime - time >= spawnIntervalMinutes * 60 * 1000000000.0) {
-                spawnZombies();
-                time = NanoTime;
-                ResourceManager.wave++;
-            }
+            percentTillWave = (NanoTime - time) / (spawnIntervalMinutes * 60 * 1000000000.0);
         }
+        if (percentTillWave >= 1) {
+            spawnZombies();
+            time = NanoTime;
+            ResourceManager.wave++;
+        }
+        
 
     }
     public static long NanoTime {
