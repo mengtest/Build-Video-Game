@@ -30,6 +30,10 @@ public class ZombieSpawner : MonoBehaviour {
             spawnZombies();
             time = NanoTime;
             ResourceManager.wave++;
+            GameObject audio = GameObject.Find("Audio Source");
+            if (audio != null) {
+                audio.GetComponent<AudioPlayer>().playZombieSpawn();
+            }
         }
         
 

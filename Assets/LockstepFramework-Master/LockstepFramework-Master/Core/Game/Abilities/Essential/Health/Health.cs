@@ -123,6 +123,13 @@ namespace Lockstep
 		public void Die ()
 		{
 			if (Agent.IsActive) {
+                Move m;
+                if ((m = GetComponent<Move>()) == null || !m.CanMove) {
+                    GameObject audio = GameObject.Find("Audio Source");
+                    if (audio != null) {
+                        audio.GetComponent<AudioPlayer>().playBuildingDestroy();
+                    }
+                }
                 HealthVisual h;
                 if ((h = GetComponent<HealthVisual>())) {
                     h.Die();

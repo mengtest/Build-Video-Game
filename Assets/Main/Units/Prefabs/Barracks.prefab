@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefc8d0eb7ab1174da61d3c71af1bbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnInterval: 983040
+  spawnInterval: 655360
   spawnAgentCode: Soldier
 --- !u!114 &114151998797068018
 MonoBehaviour:

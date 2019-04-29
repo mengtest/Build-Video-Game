@@ -136,7 +136,7 @@ MonoBehaviour:
     x: 0
     y: 0
     z: 0
-  _speed: 655360
+  _speed: 1179648
   _visualArc: 0
   _delay: 0
   _attachEndEffectToTarget: 0

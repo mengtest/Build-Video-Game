@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public AudioClip buildingDestroy;
+    public AudioClip buildingCreate;
+    public AudioClip zombieSpawn;
+
+    public void playBuildingDestroy() {
+        GetComponent<AudioSource>().PlayOneShot(buildingDestroy);
+    }
+
+    public void playBuildingCreate() {
+        GetComponent<AudioSource>().PlayOneShot(buildingCreate);
+    }
+
+    public void playZombieSpawn() {
+        GetComponent<AudioSource>().PlayOneShot(zombieSpawn);
+    }
 }

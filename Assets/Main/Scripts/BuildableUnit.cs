@@ -49,6 +49,12 @@ public class BuildableUnit : Ability {
 
                     ResourceManager.minerals -= mineralCost;
                     ResourceManager.lumber -= lumberCost;
+
+                    GameObject audio = GameObject.Find("Audio Source");
+                    if (audio != null) {
+                        audio.GetComponent<AudioPlayer>().playBuildingCreate();
+                    }
+
                     gameObject.SetActive(false);
 
                 } else {
